@@ -52,7 +52,6 @@ const ListAttachmentsTool = CreateXeroTool(
                 `   ID: ${attachment.attachmentID}`,
                 `   Size: ${attachment.contentLength ? `${Math.round(attachment.contentLength / 1024)}KB` : 'Unknown'}`,
                 `   Type: ${attachment.mimeType || 'Unknown'}`,
-                `   Updated: ${attachment.dateTimeUTC ? new Date(attachment.dateTimeUTC).toLocaleDateString() : 'Unknown'}`,
             ].join('\n')
         ).join('\n\n');
 

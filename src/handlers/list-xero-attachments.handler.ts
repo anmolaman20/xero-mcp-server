@@ -63,12 +63,7 @@ async function getAttachments(
             );
             break;
         case "items":
-            response = await xeroClient.accountingApi.getItemAttachments(
-                xeroClient.tenantId,
-                entityId,
-                getClientHeaders()
-            );
-            break;
+            throw new Error("getItemAttachments is not available in the Xero SDK. Please use a supported entity type.");
         default:
             throw new Error(`Unsupported entity type: ${entityType}`);
     }

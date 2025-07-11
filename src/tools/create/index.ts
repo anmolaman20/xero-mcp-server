@@ -10,6 +10,7 @@ import CreatePayrollTimesheetTool from "./create-payroll-timesheet.tool.js";
 import CreateQuoteTool from "./create-quote.tool.js";
 import CreateTrackingCategoryTool from "./create-tracking-category.tool.js";
 import CreateTrackingOptionsTool from "./create-tracking-options.tool.js";
+import CreateAttachmentTool from "./create-attachment.tool.js";
 
 export const CreateTools = [
   CreateContactTool,
@@ -23,5 +24,5 @@ export const CreateTools = [
   CreatePayrollTimesheetTool,
   CreatePayrollEmployeeTool,
   CreateTrackingCategoryTool,
-  CreateTrackingOptionsTool
+  CreateAttachmentTool
 ];

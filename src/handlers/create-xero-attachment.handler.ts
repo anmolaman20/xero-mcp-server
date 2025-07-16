@@ -17,6 +17,7 @@ export async function createXeroAttachment(
   fileName?: string
 ): Promise<XeroClientResponse<Attachment | null>> {
   try {
+    await xeroClient.authenticate();
     console.log(`Starting attachment upload for ${entityType} ${entityId}`);
     
     // Download file
